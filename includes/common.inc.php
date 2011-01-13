@@ -28,6 +28,6 @@ $yuqr = $db->query("SELECT author,subject FROM {$tablepre}threads ORDER BY `tid`
 set_time_limit(0);
 sleep(10);
 
-while($yunewpost = $db->fetch_array($yuqr)) {print_r($yunewpost); echo"<br />";}
+//while($yunewpost = $db->fetch_array($yuqr)) {print_r($yunewpost); echo"<br />";}
 
 ?>
