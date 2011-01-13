@@ -1,0 +1,12 @@
+#Discuz Rewrite Enginne by yugiohhh - yuProduction.net
+
+#RewriteEngine
+RewriteEngine On
+
+#RewriteBase /discuz
+
+#Rewrite Config
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?module=$1
+#RewriteRule ^forum-(.*)-([0-9]+)-([0-9]+)\.html$ forumdisplay.php?fid=$2&page=$3
